@@ -4,9 +4,8 @@
 ## GENERAL --------------------------------------------------------
 
 ## Import additional configuration files.
-import = ["~/.config/alacritty/colors.toml", "~/.config/alacritty/fonts.toml"]
+general.import = ["~/.config/alacritty/colors.toml", "~/.config/alacritty/fonts.toml"]
 
-## You can set shell.program to the path of your favorite shell, e.g. /bin/zsh.
 ## Entries in shell.args are passed as arguments to the shell.
 #shell = { program = "/bin/zsh", args = ["--login"] }
 
@@ -15,10 +14,10 @@ import = ["~/.config/alacritty/colors.toml", "~/.config/alacritty/fonts.toml"]
 #working_directory = "None"
 
 ## Live config reload
-live_config_reload = true
+general.live_config_reload = true
 
 ## Offer IPC using alacritty msg
-ipc_socket = true
+general.ipc_socket = true
 
 ## ENVIRONMENT ----------------------------------------------------
 
@@ -31,9 +30,9 @@ WINIT_X11_SCALE_FACTOR = "1.0"
 ## WINDOW ---------------------------------------------------------
 [window]
 position = "None"
-dynamic_padding = true
+dynamic_padding = false
 decorations = "none"
-opacity = 0.5
+opacity = 0.6
 blur = true
 startup_mode = "Windowed"
 dynamic_title = true
@@ -47,8 +46,8 @@ lines = 24
 
 ## Blank space added around the window in pixels.
 [window.padding]
-x = 10
-y = 10
+x = 2
+y = 2
 
 ## SCROLLING ------------------------------------------------------
 [scrolling]
