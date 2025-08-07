@@ -1,0 +1,11 @@
+show = drun
+allow_images = true
+width = 500
+height = 400
+location = bottom-right
+columns = 1
+prompt = search...
+term = alacritty
+insensitive = true
+no_actions = true
+allow_markup = true
